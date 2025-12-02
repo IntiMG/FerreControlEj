@@ -20,5 +20,19 @@
                 clase="acciones.CrearProfesor"/>        
     </controlador>
     -->
-    
+
+<!--    <controlador nombre="Producto">-->
+<!--        <hereda-de controlador="Typical"/>-->
+<!--        <accion nombre="printCustomReport" icono="printer" modo="list"-->
+<!--                clase="com.tuempresa.FerreControl.actions.PrintReport"/>-->
+<!--    </controlador>-->
+
+    <controlador nombre="Producto">
+        <hereda-de controlador="Typical"/>
+        <accion nombre="printDetailProduct"
+                clase="com.tuempresa.FerreControl.actions.PrintProductAction"
+                modo="detail"
+                icono="printer">
+        </accion>
+    </controlador>
 </controladores>

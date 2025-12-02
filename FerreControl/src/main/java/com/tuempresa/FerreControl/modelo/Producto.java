@@ -9,7 +9,7 @@ import lombok.*;
 @Entity @Getter @Setter
 public class Producto {
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY) @Hidden
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idProducto;
 
     @Column(length=50) @Required
