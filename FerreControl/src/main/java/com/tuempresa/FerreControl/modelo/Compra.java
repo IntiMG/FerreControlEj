@@ -11,6 +11,7 @@ import java.util.Collection;
     members =
     "fecha;" +
     "proveedor;" +
+    "detalleCompra { detalleCompra }" +
     "total;"
 )
 public class Compra {
@@ -23,7 +24,7 @@ public class Compra {
 
     @ManyToOne(fetch = FetchType.LAZY) @Required
     @DescriptionsList(descriptionProperties="nombre")
-    private Proveedor proveedor; // Relación N:1 con Proveedor
+    private Proveedor proveedor; // RelaciÃ³n N:1 con Proveedor
 
     @OneToMany(mappedBy="compra", cascade=CascadeType.ALL)
     @ListProperties("producto.nombre, cantidad, costoUnitario, subtotal")
